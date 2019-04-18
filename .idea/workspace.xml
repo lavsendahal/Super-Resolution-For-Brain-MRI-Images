@@ -1,0 +1,476 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="BookmarkManager">
+    <bookmark url="file://$PROJECT_DIR$/create_patches.py" line="77" />
+    <bookmark url="file://$PROJECT_DIR$/compute_psnr_and_ssim.py" line="5" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="9b552880-eb5f-46ba-879e-144684e6be31" name="Default Changelist" comment="save patches code">
+      <change afterPath="$PROJECT_DIR$/.idea/SuperResolutionMRI.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/compute_3d_gradients.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/compute_psnr_and_ssim.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/crop_volumes_main.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/model.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/prediction.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/psnr_and_ssim_utilities.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/temp/Registered_dataTSI/01/01_reg.nii.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/temp/Registered_dataTSI/02/02_reg.nii.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/temp/Registered_dataTSI/03/03_reg.nii.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/temp/Registered_dataTSI/04/04_reg.nii.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/temp/Registered_dataTSI/05/05_reg.nii.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/temp/Registered_dataTSI/06/06_reg.nii.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/temp/Registered_dataTSI/07/07_reg.nii.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/temp/Registered_dataTSI/08/08_reg.nii.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/temp/Registered_dataTSI/09/09_reg.nii.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/temp/Registered_dataTSI/10/10_reg.nii.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/temp/Registered_dataTSI/11/11_reg.nii.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/temp/Registered_dataTSI/12/12_reg.nii.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/temp/Registered_dataTSI/13/13_reg.nii.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/temp/Registered_dataTSI/14/14_reg.nii.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/temp/Registered_dataTSI/15/15_reg.nii.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/temp/hr_crop/01_hr_data_crop.nii.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/temp/hr_crop/02_hr_data_crop.nii.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/temp/hr_crop/03_hr_data_crop.nii.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/temp/hr_crop/04_hr_data_crop.nii.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/temp/hr_crop/05_hr_data_crop.nii.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/temp/hr_crop/06_hr_data_crop.nii.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/temp/hr_crop/07_hr_data_crop.nii.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/temp/hr_crop/08_hr_data_crop.nii.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/temp/hr_crop/09_hr_data_crop.nii.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/temp/hr_crop/10_hr_data_crop.nii.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/temp/hr_crop/11_hr_data_crop.nii.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/temp/hr_crop/12_hr_data_crop.nii.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/temp/hr_crop/13_hr_data_crop.nii.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/temp/hr_crop/14_hr_data_crop.nii.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/temp/hr_crop/15_hr_data_crop.nii.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/temp/reg_affine_crop/01_reg_affine_crop.nii.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/temp/reg_affine_crop/02_reg_affine_crop.nii.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/temp/reg_affine_crop/03_reg_affine_crop.nii.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/temp/reg_affine_crop/04_reg_affine_crop.nii.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/temp/reg_affine_crop/05_reg_affine_crop.nii.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/temp/reg_affine_crop/06_reg_affine_crop.nii.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/temp/reg_affine_crop/07_reg_affine_crop.nii.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/temp/reg_affine_crop/08_reg_affine_crop.nii.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/temp/reg_affine_crop/09_reg_affine_crop.nii.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/temp/reg_affine_crop/10_reg_affine_crop.nii.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/temp/reg_affine_crop/11_reg_affine_crop.nii.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/temp/reg_affine_crop/12_reg_affine_crop.nii.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/temp/reg_affine_crop/13_reg_affine_crop.nii.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/temp/reg_affine_crop/14_reg_affine_crop.nii.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/temp/reg_affine_crop/15_reg_affine_crop.nii.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/trainServer.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/utilities.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/visualize_patches.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/create_patches.py" beforeDir="false" afterPath="$PROJECT_DIR$/create_patches.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/save_npy_patches_main.py" beforeDir="false" afterPath="$PROJECT_DIR$/save_npy_patches_main.py" afterDir="false" />
+    </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/create_patches.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="110">
+              <caret line="5" column="18" selection-start-line="5" selection-start-column="18" selection-end-line="5" selection-end-column="18" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>expand_dims_data</find>
+      <find>is_lr_save_patch_name</find>
+      <find>max_min_norm</find>
+    </findStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="PREVIOUS_COMMIT_AUTHORS">
+      <list>
+        <option value="lavsen" />
+      </list>
+    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/dataset/crop_volumes_main.py" />
+        <option value="$PROJECT_DIR$/trainServer.py" />
+        <option value="$PROJECT_DIR$/psnr_and_ssim_utilities.py" />
+        <option value="$PROJECT_DIR$/compute_psnr_and_ssim.py" />
+        <option value="$PROJECT_DIR$/compute_3d_gradients.py" />
+        <option value="$PROJECT_DIR$/crop_volumes_main.py" />
+        <option value="$PROJECT_DIR$/create_patches.py" />
+        <option value="$PROJECT_DIR$/save_npy_patches_main.py" />
+        <option value="$PROJECT_DIR$/utilities.py" />
+        <option value="$PROJECT_DIR$/model.py" />
+        <option value="$PROJECT_DIR$/prediction.py" />
+        <option value="$PROJECT_DIR$/visualize_patches.py" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="-10" />
+    <option name="y" value="-10" />
+    <option name="width" value="1940" />
+    <option name="height" value="1100" />
+  </component>
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="SuperResolutionMRI" type="b2602c69:ProjectViewProjectNode" />
+              <item name="SuperResolutionMRI" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="SuperResolutionMRI" type="b2602c69:ProjectViewProjectNode" />
+              <item name="SuperResolutionMRI" type="462c0819:PsiDirectoryNode" />
+              <item name="dataset" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="Scope" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../pytorch_gan" />
+    <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="Python.visualize_patches">
+    <configuration name="compute_3d_gradients" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="SuperResolutionMRI" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/compute_3d_gradients.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="crop_volumes_main" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="SuperResolutionMRI" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/crop_volumes_main.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="prediction" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="SuperResolutionMRI" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/prediction.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="save_npy_patches_main" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="SuperResolutionMRI" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/save_npy_patches_main.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="visualize_patches" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="SuperResolutionMRI" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/visualize_patches.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Python.visualize_patches" />
+        <item itemvalue="Python.prediction" />
+        <item itemvalue="Python.save_npy_patches_main" />
+        <item itemvalue="Python.crop_volumes_main" />
+        <item itemvalue="Python.compute_3d_gradients" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="9b552880-eb5f-46ba-879e-144684e6be31" name="Default Changelist" comment="" />
+      <created>1554972280726</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1554972280726</updated>
+    </task>
+    <task id="LOCAL-00001" summary="Delete ipython notebooks">
+      <created>1554972337380</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1554972337380</updated>
+    </task>
+    <task id="LOCAL-00002" summary="save patches code">
+      <created>1554973970331</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1554973970331</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
+    <servers />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
+    <editor active="true" />
+    <layout>
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25957727" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.37906647" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Version Control" order="7" />
+      <window_info anchor="bottom" id="Terminal" order="8" />
+      <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
+      <window_info anchor="bottom" id="Python Console" order="10" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+    </layout>
+    <layout-to-restore>
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25957727" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.37906647" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Version Control" order="7" />
+      <window_info anchor="bottom" id="Terminal" order="8" />
+      <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
+      <window_info anchor="bottom" id="Python Console" order="10" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+    </layout-to-restore>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Delete ipython notebooks" />
+    <MESSAGE value="save patches code" />
+    <MESSAGE value="added grad difference as loss functions" />
+    <option name="LAST_COMMIT_MESSAGE" value="added grad difference as loss functions" />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/dataset/crop_volumes_main.py" />
+    <entry file="file://$PROJECT_DIR$/trainServer.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3256">
+          <caret line="154" selection-start-line="154" selection-end-line="154" />
+          <folding>
+            <element signature="e#0#18#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/compute_psnr_and_ssim.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="176">
+          <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
+          <folding>
+            <element signature="e#0#9#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/psnr_and_ssim_utilities.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="273">
+          <caret line="31" column="33" selection-start-line="31" selection-start-column="33" selection-end-line="31" selection-end-column="33" />
+          <folding>
+            <element signature="e#0#18#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/compute_3d_gradients.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="216">
+          <caret line="39" lean-forward="true" selection-start-line="39" selection-end-line="39" />
+          <folding>
+            <element signature="e#0#18#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/crop_volumes_main.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="110">
+          <caret line="11" selection-start-line="11" selection-end-line="11" />
+          <folding>
+            <element signature="e#0#9#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/save_npy_patches_main.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="132">
+          <caret line="6" selection-end-line="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/utilities.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="262">
+          <caret line="108" column="40" selection-start-line="108" selection-start-column="40" selection-end-line="108" selection-end-column="40" />
+          <folding>
+            <element signature="e#0#60#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/model.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="197">
+          <caret line="157" selection-start-line="157" selection-end-line="157" />
+          <folding>
+            <element signature="e#0#43#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/visualize_patches.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="79">
+          <caret line="12" column="46" selection-start-line="12" selection-start-column="46" selection-end-line="12" selection-end-column="46" />
+          <folding>
+            <element signature="e#0#18#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/prediction.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="39">
+          <caret line="8" selection-start-line="8" selection-end-line="8" />
+          <folding>
+            <element signature="e#0#37#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/create_patches.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="110">
+          <caret line="5" column="18" selection-start-line="5" selection-start-column="18" selection-end-line="5" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>

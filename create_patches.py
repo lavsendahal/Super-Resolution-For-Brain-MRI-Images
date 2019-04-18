@@ -9,18 +9,16 @@ import nibabel as nib
 
 def max_min_norm(image_vol):
     num = image_vol - np.amin(image_vol)
-    print (num.dtype)
     return num / np.amax(num)
-    # return (image_vol - np.min(image_vol)) / (np.max(image_vol) - np.min(image_vol))
 
 
 def get_lr_patches(img_data, sigma_val, affine, folder_name, simulation_type_dir):
     lr_data = gaussian_filter(img_data, sigma=sigma_val)
     # lr_data *= 1.0 / np.max(lr_data)
     lr_data = max_min_norm(lr_data)
-    # img = nib.Nifti1Image(lr_data, affine=affine)
-    # img_name = folder_name + '_t1' + '_gauss_sigma' + str(sigma_val) + '.nii.gz'
-    # nib.save(img, os.path.join('outputs', 'simulated_lr', simulation_type_dir, img_name))
+    img = nib.Nifti1Image(lr_data, affine=affine)
+    img_name = folder_name + '_gauss_sigma' + '_0_75' + '.nii.gz'
+    nib.save(img, os.path.join('outputs', 'simulated_lr', simulation_type_dir, img_name))
     return lr_data
 
 
@@ -38,16 +36,14 @@ def create_patches(img_path, patch_shape, extraction_shape, is_val, sigma_val, i
         img = nib.load(path_img)
         affine = img.affine
         img_data = img.get_fdata()
-        img_data = np.squeeze(img_data)
+        # img_data = img_data[35:227, 15:143, 0:192]
 
         if is_lr:
             img_data = get_lr_patches(img_data, sigma_val, affine, folder_name,  simulation_type_dir)
         else:
-            img_data = max_min_norm(img_data)
+            # img_data = max_min_norm(img_data)
             print (np.amax(img_data))
             print (np.amin(img_data))
-            # img_data = img_data
-            # img_data *= 1.0 / np.max(img_data)
 
         print(img_data.shape)
 
@@ -79,17 +75,17 @@ def create_patches(img_path, patch_shape, extraction_shape, is_val, sigma_val, i
     print(patches_all.dtype)
     if is_val:
        if is_lr_save_patch_name:
-            save_name = 'patches_3d/' + 'val_img_lr32.npy'
+            save_name = 'patches_3d/dataset_51/' + 'val_img_lr32.npy'
             np.save(save_name, patches_all)
        else:
-            save_name = 'patches_3d/' + 'val_img_hr32.npy'
+            save_name = 'patches_3d/dataset_51/' + 'val_img_hr32.npy'
             np.save(save_name, patches_all)
 
     else:
         if is_lr_save_patch_name:
-            save_name = 'patches_3d/' + 'train_img_lr32.npy'
+            save_name = 'patches_3d/dataset_51/' + 'train_img_lr32.npy'
             np.save(save_name, patches_all)
         else:
-            save_name = 'patches_3d/' + 'train_img_hr32.npy'
+            save_name = 'patches_3d/dataset_51/' + 'train_img_hr32.npy'
             np.save(save_name, patches_all)
     del patches_all
